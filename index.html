@@ -44,14 +44,14 @@
     transition: filter 0.3s;
   }
 
-  /* Focus Mode */
+  
   body.focus-mode .hero-orb,
   body.focus-mode .mosaic-bg,
   body.focus-mode .ticker-row { opacity: 0 !important; pointer-events: none; }
   body.focus-mode section:not(.lesson-section) .features-grid > *:not(:first-child) { opacity: 0.3; }
   body.focus-mode nav { background: var(--bg) !important; }
 
-  /* High Contrast */
+  
   body.high-contrast {
     --bg: #000010; --bg2: #05050f; --bg3: #0a0a1a;
     --surface: #111125; --surface2: #181830;
@@ -66,7 +66,7 @@
     pointer-events: none; z-index: 0; opacity: 0.4;
   }
 
-  /* ─── ACCESSIBILITY PANEL ─── */
+  
   #a11y-fab {
     position: fixed; bottom: 28px; right: 28px; z-index: 999;
     width: 52px; height: 52px; border-radius: 50%;
@@ -155,7 +155,7 @@
   }
   .speed-btn.active { background: rgba(155,109,255,0.2); color: var(--purple-light); border-color: rgba(155,109,255,0.4); }
 
-  /* ─── NAV ─── */
+ 
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
@@ -192,7 +192,7 @@
   }
   .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 0 32px rgba(155,109,255,0.5); }
 
-  /* ─── HERO ─── */
+  
   .hero {
     position: relative; min-height: 100vh;
     display: flex; flex-direction: column;
@@ -249,7 +249,7 @@
   }
   .btn-secondary-hero:hover { background: var(--surface2); }
 
-  /* ─── CODE CARD ─── */
+ 
   .hero-preview { position: relative; width: 100%; max-width: 700px; animation: fadeUp 0.8s 0.4s ease both; }
   .code-card { background: var(--surface); border: 1px solid var(--border2); border-radius: 16px; overflow: hidden; text-align: left; box-shadow: 0 40px 80px rgba(0,0,0,0.5); }
   .code-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: var(--surface2); border-bottom: 1px solid var(--border); }
@@ -272,7 +272,7 @@
 
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 
-  /* ─── STATS STRIP ─── */
+  
   .stats-strip {
     position: relative; z-index: 1;
     display: grid; grid-template-columns: repeat(4,1fr);
@@ -285,14 +285,14 @@
   .stat-num { font-family: var(--font-display); font-size: 40px; font-weight: 800; line-height: 1; margin-bottom: 6px; }
   .stat-label { font-size: 13px; color: var(--muted); font-weight: 400; }
 
-  /* ─── SHARED SECTION STYLES ─── */
+  
   section { position: relative; z-index: 1; }
   .section-label { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 12px; color: var(--purple-light); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
   .section-label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--purple); }
   .section-title { font-family: var(--font-display); font-size: clamp(32px,5vw,56px); font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 1rem; }
   .section-desc { font-size: 17px; color: var(--muted); max-width: 500px; line-height: 1.7; font-weight: 300; }
 
-  /* ─── PROBLEMS → SOLUTIONS ─── */
+  
   .problems {
     padding: 100px 3rem;
     background: var(--bg2);
@@ -349,7 +349,7 @@
   .prob-col-head.bad { color: var(--coral); }
   .prob-col-head.good { color: var(--teal); }
 
-  /* ─── LESSON PATH ─── */
+ 
   .lesson-section {
     padding: 100px 3rem;
   }
@@ -417,7 +417,7 @@
   }
   .pace-notice span:first-child { font-size: 18px; }
 
-  /* ─── FOCUS MODE SECTION ─── */
+ 
   .focus-section { padding: 100px 3rem; background: var(--bg2); }
   .focus-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
   .focus-visual { position: relative; }
@@ -471,7 +471,7 @@
   .focus-feat-title { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
   .focus-feat-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
 
-  /* ─── MOTIVATION SECTION ─── */
+ 
   .motivation-section { padding: 100px 3rem; }
   .motivation-inner { max-width: 1100px; margin: 0 auto; }
   .motivation-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
@@ -517,7 +517,7 @@
   .mpt-text strong { display: block; font-size: 16px; font-weight: 700; margin-bottom: 4px; }
   .mpt-text span { font-size: 14px; color: var(--muted); }
 
-  /* ─── INTERACTIVE VISUALS ─── */
+  
   .interactive-section { padding: 100px 3rem; background: var(--bg2); }
   .interactive-inner { max-width: 1100px; margin: 0 auto; }
   .interactive-header { text-align: center; margin-bottom: 4rem; }
@@ -534,7 +534,7 @@
 
   .viz-label { font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px; }
 
-  /* Live code demo */
+
   .live-demo { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
   .live-input, .live-output { padding: 16px; font-family: var(--font-mono); font-size: 13px; line-height: 1.8; }
   .live-input { background: var(--bg3); border-right: 1px solid var(--border); }
@@ -545,7 +545,6 @@
   .output-line { color: var(--teal); }
   .output-line.err { color: var(--coral); }
 
-  /* Concept visual */
   .concept-blocks { display: flex; gap: 8px; flex-wrap: wrap; }
   .concept-block {
     padding: 8px 14px; border-radius: 8px; font-family: var(--font-mono);
@@ -554,7 +553,7 @@
   }
   .concept-block:hover { transform: translateY(-2px); }
 
-  /* Flow diagram */
+  
   .flow-diagram { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .flow-node {
     padding: 10px 16px; border-radius: 10px; font-size: 13px; font-weight: 500;
@@ -566,7 +565,7 @@
   .flow-node.decision { background: rgba(255,200,74,0.1); color: var(--amber); border: 1px solid rgba(255,200,74,0.2); border-radius: 50px; }
   .flow-node.end { background: rgba(255,107,107,0.1); color: var(--coral); border: 1px solid rgba(255,107,107,0.2); }
 
-  /* ─── FEATURES ─── */
+
   .features { padding: 100px 3rem; }
   .features-header { text-align: center; max-width: 600px; margin: 0 auto 5rem; }
   .features-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
@@ -579,7 +578,7 @@
   .feature-tags { display: flex; gap: 8px; margin-top: 20px; flex-wrap: wrap; }
   .tag { font-family: var(--font-mono); font-size: 11px; padding: 4px 10px; border-radius: 100px; border: 1px solid var(--border2); color: var(--muted); }
 
-  /* ─── TESTIMONIALS ─── */
+  
   .testimonials { padding: 100px 3rem; overflow: hidden; }
   .testimonials-header { text-align: center; margin-bottom: 4rem; }
   .tickers { display: flex; flex-direction: column; gap: 16px; overflow: hidden; }
@@ -597,7 +596,7 @@
   .tcard-name { font-size: 13px; font-weight: 500; }
   .tcard-role { font-size: 11px; color: var(--muted); font-family: var(--font-mono); }
 
-  /* ─── CTA ─── */
+
   .cta-section { padding: 100px 3rem; background: var(--bg2); }
   .cta-inner { max-width: 900px; margin: 0 auto; background: linear-gradient(135deg,rgba(155,109,255,0.1),rgba(45,232,200,0.06)); border: 1px solid rgba(155,109,255,0.2); border-radius: 28px; padding: 64px; text-align: center; position: relative; overflow: hidden; }
   .cta-title { font-family: var(--font-display); font-size: clamp(36px,5vw,56px); font-weight: 800; letter-spacing: -2px; margin-bottom: 1rem; line-height: 1.1; }
@@ -605,7 +604,7 @@
   .cta-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
   .cta-note { font-size: 13px; color: var(--faint); margin-top: 1.5rem; font-family: var(--font-mono); }
 
-  /* ─── FOOTER ─── */
+
   footer { border-top: 1px solid var(--border); padding: 3rem; display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; position: relative; z-index: 1; }
   .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; text-decoration: none; }
   .footer-tagline { font-size: 14px; color: var(--faint); line-height: 1.6; max-width: 240px; }
@@ -618,21 +617,21 @@
   .footer-bottom p { font-size: 13px; color: var(--faint); font-family: var(--font-mono); }
   .footer-heart { color: var(--coral); }
 
-  /* ─── MOSAIC BG PATTERN ─── */
+
   .mosaic-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; opacity: 0.03; }
   .mosaic-bg svg { width: 100%; height: 100%; }
 
-  /* ─── SCROLL REVEAL ─── */
+ 
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ─── FOCUS: hide non-lesson elements ─── */
+
   a:focus-visible, button:focus-visible { outline: 2px solid var(--purple); outline-offset: 3px; border-radius: 4px; }
 </style>
 </head>
 <body>
 
-<!-- ACCESSIBILITY FAB -->
+
 <button id="a11y-fab" onclick="toggleA11y()" title="Accessibility settings" aria-label="Open accessibility settings">⚙</button>
 
 <div id="a11y-panel">
@@ -673,7 +672,7 @@
   </div>
 </div>
 
-<!-- NAV -->
+
 <nav>
   <a href="#" class="nav-logo">
     <div class="logo-tiles">
@@ -695,7 +694,7 @@
   </div>
 </nav>
 
-<!-- HERO -->
+
 <section class="hero">
   <div class="hero-orb orb1"></div>
   <div class="hero-orb orb2"></div>
@@ -754,7 +753,7 @@
   </div>
 </section>
 
-<!-- STATS -->
+
 <div class="stats-strip">
   <div class="stat-item"><div class="stat-num" style="color:var(--purple)">12K+</div><div class="stat-label">Active learners</div></div>
   <div class="stat-item"><div class="stat-num" style="color:var(--teal)">6</div><div class="stat-label">Languages taught</div></div>
@@ -762,7 +761,7 @@
   <div class="stat-item"><div class="stat-num" style="color:var(--coral)">94%</div><div class="stat-label">Confidence boost</div></div>
 </div>
 
-<!-- ① PROBLEMS → SOLUTIONS (Modern UI + No Overwhelm) -->
+
 <section class="problems" id="problems">
   <div class="problems-inner">
     <div class="problems-header reveal">
@@ -865,7 +864,7 @@
   </div>
 </section>
 
-<!-- ② LEARNING PATH   Step-by-step, Self-paced -->
+
 <section class="lesson-section" id="lesson">
   <div class="lesson-inner">
     <div class="lesson-header reveal">
@@ -957,7 +956,7 @@
   </div>
 </section>
 
-<!-- ③ FOCUS MODE & Accessibility -->
+
 <section class="focus-section" id="focus">
   <div class="focus-inner">
     <div class="reveal">
@@ -1033,7 +1032,7 @@
   </div>
 </section>
 
-<!-- ④ MOTIVATION   Progression System -->
+
 <section class="motivation-section" id="motivation">
   <div class="motivation-inner">
     <div class="motivation-header reveal">
@@ -1112,7 +1111,7 @@
   </div>
 </section>
 
-<!-- ⑤ INTERACTIVE VISUALS & LIVE CODING -->
+
 <section class="interactive-section" id="interactive">
   <div class="interactive-inner">
     <div class="interactive-header reveal">
@@ -1148,7 +1147,7 @@
         <div style="margin-top:12px;font-size:13px;color:var(--muted);">In a real Mosaic lesson, you type here and see output update instantly   no compile step, no waiting.</div>
       </div>
 
-      <!-- Concept blocks -->
+      
       <div class="viz-card">
         <div class="viz-label">Concept: what is a variable?</div>
         <div style="margin-bottom:14px;font-size:14px;color:var(--muted);">A variable is like a labelled box   it holds a value you can use and change later.</div>
@@ -1163,7 +1162,7 @@
         </div>
       </div>
 
-      <!-- Flow diagram -->
+      
       <div class="viz-card">
         <div class="viz-label">Concept: if / else flow</div>
         <div style="margin-bottom:16px;font-size:14px;color:var(--muted);">A visual diagram of how your code makes decisions.</div>
@@ -1187,7 +1186,6 @@
   </div>
 </section>
 
-<!-- FEATURES SUMMARY -->
 <section class="features" id="features">
   <div class="features-header reveal">
     <div class="section-label">Platform features</div>
@@ -1231,7 +1229,7 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+
 <section class="testimonials">
   <div class="testimonials-header reveal">
     <div class="section-label" style="justify-content:center;">Learners</div>
@@ -1257,7 +1255,7 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+
 <footer>
   <div>
     <a href="#" class="footer-logo">
@@ -1278,7 +1276,6 @@
 </div>
 
 <script>
-// ─── A11Y PANEL
 function toggleA11y() {
   document.getElementById('a11y-panel').classList.toggle('open');
 }
@@ -1320,7 +1317,7 @@ function toggleFocusDemo() {
   btn.textContent = focusDemoOn ? 'Focus Mode: ON' : 'Focus Mode: OFF';
 }
 
-// ─── SCROLL REVEAL
+
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
@@ -1332,7 +1329,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 reveals.forEach(el => observer.observe(el));
 
-// ─── TESTIMONIALS TICKER
+
 const testimonials = [
   { stars: '★★★★★', text: "I tried Scratch and it felt too childish, but Mosaic gives me real Python code. I built an actual calculator app!", name: "Alex T.", role: "Age 15 · Explorer Path", initials: "AT", color: "#9b6dff" },
   { stars: '★★★★★', text: "The consistent lesson format means I always know what's coming next. That makes it so much easier to focus on coding.", name: "Jordan K.", role: "Age 17 · Builder Path", initials: "JK", color: "#2de8c8" },
@@ -1354,7 +1351,7 @@ const doubled = [...testimonials, ...testimonials];
 row1.innerHTML = doubled.map(makeTcard).join('');
 row2.innerHTML = [...doubled.slice(4), ...doubled.slice(0,4)].map(makeTcard).join('');
 
-// ─── CODE TABS
+
 document.querySelectorAll('.code-tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.code-tab').forEach(t => t.classList.remove('active'));
